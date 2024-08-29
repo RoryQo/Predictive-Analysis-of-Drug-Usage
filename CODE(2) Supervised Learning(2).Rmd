@@ -2,7 +2,7 @@
 title: "Supervised Machine Learning (2)"
 subtitle: 
 author: "Rory Quinlan"
-#date: "December 3, 2021"
+#date: ""
 output: 
     rmarkdown::github_document
 ---
