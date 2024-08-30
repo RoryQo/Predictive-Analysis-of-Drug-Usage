@@ -1,14 +1,14 @@
 # R-Supervised-Learning-Lab
 #### Purpose
-The purpose of lab (2) is to predict hard drug use with supervised learning models including random forests, and naive bayes model; using false positive rates, true positive rates, true negative rates and accuracy rates to assess the usefulness and validity of the models.
+The purpose of lab (1) is to predict hard drug use with supervised learning models including random forests, and naive bayes model; using false positive rates, true positive rates, true negative rates and accuracy rates to assess the usefulness and validity of the models.
 
-The purpose lab (1) is to use principal components to explain proportions of variance between countries using the unsupervised learning model Principal component analysis
+The purpose lab (2) is to use principal components to explain proportions of variance between countries using the unsupervised learning model Principal component analysis
 #### Notes
 + Code(1) and (2) are original rmd files 
 + markdown (1) and (2) are the knitted r files output for github
 + Code(1) and markdown(1) are the same code and code(2) and markdown(2) are the same code
 
-Code(2) uses national health data to predict hard drug use from other health markers
+Code(1) uses national health data to predict hard drug use from other health markers
 ### NHANES data (available directly in r)
 #### Target
 + ***HardDrugs*** Participant has tried cocaine, crack cocaine, heroin or methamphetamine. Reported
