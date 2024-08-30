@@ -1,5 +1,5 @@
 ---
-title: "Supervised Machine Learning Lab (2)"
+title: "Supervised Machine Learning Lab (1)"
 subtitle: 
 author: "Rory Quinlan"
 #date: ""
