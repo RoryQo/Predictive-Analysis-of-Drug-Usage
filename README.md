@@ -25,7 +25,7 @@ One of 8thGrade, 9-11thGrade, HighSchool, SomeCollege, or CollegeGrad.
 One of Married, Widowed, Divorced, Separated, NeverMarried, or LivePartner (living
 with partner).
 + ***HHIncome*** Total annual gross income for the household in US dollars. One of 0 - 4999, 5000
-- 9,999, 10000 - 14999, 15000 - 19999, 20000 - 24,999, 25000 - 34999, 35000 - 44999,
+,9,999, 10000 - 14999, 15000 - 19999, 20000 - 24,999, 25000 - 34999, 35000 - 44999,
 45000 - 54999, 55000 - 64999, 65000 - 74999, 75000 - 99999, or 100000 or More.
 + ***HomeOwn*** One of Home, Rent, or Other indicating whether the home of study participant or someone in their family is owned, rented or occupied by some other arrangment
 + ***Weight*** Weight in kg
