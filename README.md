@@ -1,6 +1,6 @@
 # R-Supervised-Learning-Lab
 #### Purpose
-The purpose of lab (1) is to predict hard drug use with supervised learning models including random forests, and naive bayes model; using false positive rates, true positive rates, true negative rates and accuracy rates to assess the usefulness and validity of the models.
+The purpose of the lab (1) is to predict hard drug use with supervised learning models, including random forests and naive Bayes model; accuracy and precision rates to assess the usefulness and validity of the models.
 
 The purpose lab (2) is to use principal components to explain proportions of variance between countries using the unsupervised learning model Principal component analysis
 #### Notes
