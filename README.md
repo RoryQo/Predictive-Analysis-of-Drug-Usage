@@ -5,7 +5,7 @@ The purpose of the part (1) is to predict hard drug use with supervised learning
 The purpose part (2) is to use principal components to explain proportions of variance between countries using the unsupervised learning model Principal component analysis
 #### Notes
 + Code(1) and (2) are original rmd files 
-+ markdown (1) and (2) are the knitted r files output for github
++ markdown (1) and (2) are the knitted r files output for GitHub
 + Code(1) and markdown(1) are the same code and code(2) and markdown(2) are the same code
 
 Code(1) uses national health data to predict hard drug use from other health markers
