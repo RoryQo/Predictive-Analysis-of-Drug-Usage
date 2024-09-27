@@ -1,4 +1,4 @@
-# R-Supervised-Learning-Project
+# R-Supervised-Learning-Project 
 #### Purpose
 The purpose of part (1) is to predict hard drug use with supervised learning models, including random forests and naive Bayes model; accuracy and precision rates to assess the usefulness and validity of the models.
 
