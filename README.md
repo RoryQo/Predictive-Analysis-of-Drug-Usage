@@ -1,4 +1,4 @@
-# Project: Predictive Analysis of Drug Usage
+# Predictive Analysis of Drug Usage Lab
 
 ## Table of Contents
 1. [Overview](#overview)
