@@ -1,45 +1,32 @@
-# Machine Learning Projects
+# Project: Predictive Analysis of Drug Usage
 
 ## Table of Contents
 1. [Overview](#overview)
-2. [Part 1: Supervised Machine Learning](#part-1-supervised-machine-learning)
-   - [Data Preparation](#data-preparation)
-   - [Modeling Techniques](#modeling-techniques)
-   - [Model Assessment](#model-assessment)
-3. [Part 2: Unsupervised Machine Learning](#part-2-unsupervised-machine-learning)
-   - [Data Loading](#data-loading)
-   - [Principal Component Analysis](#principal-component-analysis)
-   - [Clustering](#clustering)
-   - [Cluster Analysis](#cluster-analysis)
-4. [Conclusion](#conclusion)
+2. [Data Preparation](#data-preparation)
+3. [Modeling Techniques](#modeling-techniques)
+4. [Model Assessment](#model-assessment)
+5. [Conclusion](#conclusion)
 
 ## Overview
-This repository contains two projects focusing on different machine learning techniques: supervised and unsupervised learning. The first project applies various supervised learning algorithms to predict drug usage based on health and demographic data. The second project utilizes principal component analysis and clustering methods to analyze country-level data, exploring relationships between economic and health indicators.
+In this project, we utilize the NHANES dataset to predict hard drug usage based on various health and demographic features. The project involves data cleaning, model training using supervised learning algorithms, and evaluating the performance of these models.
 
-## Part 1: Supervised Machine Learning
+## Data Preparation
+The NHANES dataset is processed to select relevant features such as age, gender, race, education, and health indicators. Missing values are handled to ensure a clean dataset suitable for model training. The data is split into training (80%) and testing (20%) sets for effective model evaluation.
 
-### Data Preparation
-In this project, the NHANES dataset is utilized to train models predicting hard drug usage. Data is cleaned and prepared, ensuring that missing values are handled appropriately and features are selected for model training.
+## Modeling Techniques
+Several supervised learning algorithms are applied:
+- **Decision Trees:** A tree-based model that makes predictions based on feature splits.
+- **Random Forests:** An ensemble method using multiple decision trees to improve accuracy.
+- **Naive Bayes:** A probabilistic classifier based on Bayes' theorem.
 
-### Modeling Techniques
-Multiple algorithms are employed, including decision trees, random forests, and naive Bayes. The models are trained and evaluated using various metrics, including misclassification rates and confusion matrices. Hyperparameter tuning is performed for the random forest model to optimize performance.
+Each model is trained on the training dataset, and predictions are made on the testing set.
 
-### Model Assessment
-The models are assessed based on their classification performance, and metrics such as sensitivity and specificity are calculated. The analysis highlights the trade-offs between model complexity and accuracy, providing insights into the best-performing models.
+## Model Assessment
+The performance of the models is assessed using various metrics:
+- **Misclassification Rate:** Calculated to evaluate the percentage of incorrect predictions.
+- **Confusion Matrix:** Provides a detailed breakdown of true positives, true negatives, false positives, and false negatives.
 
-## Part 2: Unsupervised Machine Learning
-
-### Data Loading
-This project involves the analysis of country-level data to uncover patterns through unsupervised learning techniques. The dataset is loaded, and initial exploratory data analysis is performed.
-
-### Principal Component Analysis
-Principal component analysis (PCA) is conducted to reduce dimensionality and identify key components that explain the most variance in the data. A scree plot is created to visualize the proportion of variance explained by each principal component, and cumulative variance is assessed to determine the number of components to retain.
-
-### Clustering
-Using the first few principal components, k-means clustering and Partitioning Around Medoids (PAM) are applied to identify clusters within the data. The optimal number of clusters is determined through methods such as the gap statistic, and differences between clustering methods are evaluated.
-
-### Cluster Analysis
-The analysis of clusters focuses on economic indicators like GDP per capita and health metrics such as life expectancy. Boxplots are used to visualize differences across clusters, and median life expectancy is calculated for each cluster, revealing significant disparities.
+Hyperparameter tuning is performed on the random forest model to optimize performance, ensuring the best model is selected based on accuracy and error rates.
 
 ## Conclusion
-These projects demonstrate the application of both supervised and unsupervised machine learning techniques to real-world datasets. Through careful data preparation, model selection, and evaluation, valuable insights are derived that contribute to understanding complex relationships within the data. This comprehensive approach showcases the strengths of machine learning in predictive analytics and exploratory data analysis.
+This project demonstrates the effectiveness of supervised learning techniques in predicting drug usage based on health and demographic data. The analysis highlights the importance of model selecti
