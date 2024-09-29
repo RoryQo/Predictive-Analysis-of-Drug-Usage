@@ -29,4 +29,4 @@ The performance of the models is assessed using various metrics:
 Hyperparameter tuning is performed on the random forest model to optimize performance, ensuring the best model is selected based on accuracy and error rates.
 
 ## Conclusion
-This project demonstrates the effectiveness of supervised learning techniques in predicting drug usage based on health and demographic data. The analysis highlights the importance of model selecti
+This project demonstrates the effectiveness of supervised learning techniques in predicting drug usage based on health and demographic data. The analysis highlights the importance of model selection and evaluation, providing insights into the best-performing algorithms for classification tasks.
