@@ -1,61 +1,45 @@
-# R-Supervised-Learning-Project 
-#### Purpose
-The purpose of part (1) is to predict hard drug use with supervised learning models, including random forests and naive Bayes model; accuracy and precision rates to assess the usefulness and validity of the models.
+# Machine Learning Projects
 
-The purpose of part (2) is to use principal components to explain proportions of variance between countries using the unsupervised learning model Principal component analysis
-#### Notes
-+ Code(1) and (2) are original rmd files 
-+ markdown (1) and (2) are the knitted r files output for GitHub
-+ Code(1) and markdown(1) are the same code and code(2) and markdown(2) are the same code
+## Table of Contents
+1. [Overview](#overview)
+2. [Part 1: Supervised Machine Learning](#part-1-supervised-machine-learning)
+   - [Data Preparation](#data-preparation)
+   - [Modeling Techniques](#modeling-techniques)
+   - [Model Assessment](#model-assessment)
+3. [Part 2: Unsupervised Machine Learning](#part-2-unsupervised-machine-learning)
+   - [Data Loading](#data-loading)
+   - [Principal Component Analysis](#principal-component-analysis)
+   - [Clustering](#clustering)
+   - [Cluster Analysis](#cluster-analysis)
+4. [Conclusion](#conclusion)
 
-Code(1) uses national health data to predict hard drug use from other health markers
-### NHANES data (available directly in r)
-#### Target
-+ `HardDrugs` Participant has tried cocaine, crack cocaine, heroin or methamphetamine. Reported
-for participants aged 18 to 69 years as Yes or No.
-#### Features
-+ `BMI` Body mass index (weight/height2 in kg/m2). Reported for participants aged 2 years or older.
-+ `Gender` Gender (sex) of study participant coded as male or female
-+ `Age` Age in years at screening of study participant. Note: Subjects 80 years or older were recorded
-as 80.
-+ `Race1` Reported race of study participant: Mexican, Hispanic, White, Black, or Other.
-+ `Education` Educational level of study participant Reported for participants aged 20 years or older.
-One of 8thGrade, 9-11thGrade, HighSchool, SomeCollege, or CollegeGrad.
-+ `MaritalStatus` Marital status of study participant. Reported for participants aged 20 years or older.
-One of Married, Widowed, Divorced, Separated, NeverMarried, or LivePartner (living
-with partner).
-+ `HHIncome` Total annual gross income for the household in US dollars. One of 0 - 4999, 5000
-,9,999, 10000 - 14999, 15000 - 19999, 20000 - 24,999, 25000 - 34999, 35000 - 44999,
-45000 - 54999, 55000 - 64999, 65000 - 74999, 75000 - 99999, or 100000 or More.
-+ `HomeOwn` One of Home, Rent, or Other indicating whether the home of study participant or someone in their family is owned, rented or occupied by some other arrangment
-+ `Weight` Weight in kg
-+ `Height` Standing height in cm. Reported for participants aged 2 years or older.
-+ `Pulse` 60 second pulse rate
-+ `BPSysAve` Combined systolic blood pressure reading, following the procedure outlined for BPXSAR
-+ `BPDiaAve` Combined diastolic blood pressure reading, following the procedure outlined for BPXDAR.
-+ `Diabetes` Study participant told by a doctor or health professional that they have diabetes. Reported
-for participants aged 1 year or older as Yes or No.
-+ `HealthGen` Self-reported rating of participant’s health in general Reported for participants aged 12
-years or older. One of Excellent, Vgood, Good, Fair, or Poor.
-+ `DaysPhysHlthBad` Self-reported number of days participant’s physical health was not good out of
-the past 30 days. Reported for participants aged 12 years or older.
-+ `DaysMentHlthBad` Self-reported number of days participant’s mental health was not good out of
-the past 30 days. Reported for participants aged 12 years or older
-+ **Depressed** Self-reported number of days where participant felt down, depressed or hopeless. Reported for participants aged 18 years or older. One of None, Several, Majority (more than
-half the days), or AlmostAll.
-+ `SleepHrsNight` Self-reported number of hours study participant usually gets at night on weekdays
-or workdays. Reported for participants aged 16 years and older.
-+ `SleepTrouble` Participant has told a doctor or other health professional that they had trouble sleeping. Reported for participants aged 16 years and older. Coded as Yes or No.
-+ `Smoke100` Study participant has smoked at least 100 cigarettes in their entire life. Reported for
-participants aged 20 years or older as Yes or No
-+ `Marijuana` Participant has tried marijuana. Reported for participants aged 18 to 59 years as Yes
-or No. AgeFirstMarijAge participant first tried marijuana. Reported for participants aged 18
-to 59 years
-+ `Smoke100` Study participant has smoked at least 100 cigarettes in their entire life. Reported for
-participants aged 20 years or older as Yes or No
-+ `AlcoholDay Average` number of drinks consumed on days that participant drank alcoholic beverages. Reported for participants aged 18 years or older.
+## Overview
+This repository contains two projects focusing on different machine learning techniques: supervised and unsupervised learning. The first project applies various supervised learning algorithms to predict drug usage based on health and demographic data. The second project utilizes principal component analysis and clustering methods to analyze country-level data, exploring relationships between economic and health indicators.
 
+## Part 1: Supervised Machine Learning
 
+### Data Preparation
+In this project, the NHANES dataset is utilized to train models predicting hard drug usage. Data is cleaned and prepared, ensuring that missing values are handled appropriately and features are selected for model training.
 
+### Modeling Techniques
+Multiple algorithms are employed, including decision trees, random forests, and naive Bayes. The models are trained and evaluated using various metrics, including misclassification rates and confusion matrices. Hyperparameter tuning is performed for the random forest model to optimize performance.
 
+### Model Assessment
+The models are assessed based on their classification performance, and metrics such as sensitivity and specificity are calculated. The analysis highlights the trade-offs between model complexity and accuracy, providing insights into the best-performing models.
 
+## Part 2: Unsupervised Machine Learning
+
+### Data Loading
+This project involves the analysis of country-level data to uncover patterns through unsupervised learning techniques. The dataset is loaded, and initial exploratory data analysis is performed.
+
+### Principal Component Analysis
+Principal component analysis (PCA) is conducted to reduce dimensionality and identify key components that explain the most variance in the data. A scree plot is created to visualize the proportion of variance explained by each principal component, and cumulative variance is assessed to determine the number of components to retain.
+
+### Clustering
+Using the first few principal components, k-means clustering and Partitioning Around Medoids (PAM) are applied to identify clusters within the data. The optimal number of clusters is determined through methods such as the gap statistic, and differences between clustering methods are evaluated.
+
+### Cluster Analysis
+The analysis of clusters focuses on economic indicators like GDP per capita and health metrics such as life expectancy. Boxplots are used to visualize differences across clusters, and median life expectancy is calculated for each cluster, revealing significant disparities.
+
+## Conclusion
+These projects demonstrate the application of both supervised and unsupervised machine learning techniques to real-world datasets. Through careful data preparation, model selection, and evaluation, valuable insights are derived that contribute to understanding complex relationships within the data. This comprehensive approach showcases the strengths of machine learning in predictive analytics and exploratory data analysis.
