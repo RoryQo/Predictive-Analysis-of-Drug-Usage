@@ -1,4 +1,4 @@
-# Predictive Analysis of Drug Usage Mini Project 
+# Predictive Analysis of Drug Usage Mini Project  
 
 ## Table of Contents
 1. [Overview](#overview)
