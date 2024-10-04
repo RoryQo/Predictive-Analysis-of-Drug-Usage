@@ -25,6 +25,18 @@ Each model is trained on the training dataset, and predictions are made on the t
 The performance of the models is assessed using various metrics:
 - **Misclassification Rate:** Calculated to evaluate the percentage of incorrect predictions.
 - **Confusion Matrix:** Provides a detailed breakdown of true positives, true negatives, false positives, and false negatives.
+```
+# Create function to make a confusion matrix 
+# create new columns in data with predictions from model
+# select actual target values (y) and predicted y values
+# Table them
+confusion_matrix <- function(data,y,mod){
+  confusion_matrix <- data %>% 
+  mutate(pred = predict(mod, newdata = data, type = "class"),
+         y=y) %>%
+  select(y,pred) %>% table()
+}
+```
 
 Hyperparameter tuning is performed on the random forest model to optimize performance, ensuring the best model is selected based on accuracy and error rates.
 
