@@ -1,6 +1,6 @@
 # Predictive Analysis of Drug Usage Mini Project   
  
-## Table of Contents
+## Table of Contents 
 1. [Overview](#overview)
 2. [Data Preparation](#data-preparation)
 3. [Modeling Techniques](#modeling-techniques)
